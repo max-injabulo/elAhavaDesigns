@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ahava Designs LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Resetting body margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        /* Ensure navbar is fully at the top and covers any content beneath it */
+        .navbar.fixed-top {
+            top: 0;
+            width: 100%;
+            z-index: 1030; /* Standard z-index for Bootstrap navbars */  
+        }
+        .custom-nav-link {
+            color: #cf9b00;  /* Gold color */
+        }
+
+        .carousel-styles{
+            padding-top: 75px; /* Add padding to the top of carousel */
+        }
+
+        .carousel-item {
+            transition: opacity 2s ease; /* Slows down the fade transition */
+        }
+        /* Carousel image adjustments */
+        .carousel-item img {
+            height: 700px; /* Set a fixed height for your carousel */
+            object-fit: cover; /* Cover the space without distorting ratio */
+        }
+
+        /* Custom styles for resizing the image */
+        .small-image {
+        width: 75%; /* Adjust the percentage as needed */
+        }
+
+        .dark-grey-background {
+            background-color: #333; /* Example of a dark grey color */
+        }
+        .lighter-font-color {
+            color: #f4f4f4; /* Example of a lighter font color */
+        }
+
+        
+        /* Custom Padding Adjustment */
+        @media (min-width: 576px) { /* This targets screens larger than Bootstrap's xs breakpoint */
+            .padded-top-section { /* pushes the about me section down a little */
+                padding-top: 18vh; /* Adjust the padding top as 25% of the viewport height */
+            }
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Section with Navbar -->
+        <nav class="navbar fixed-top" style="background-color: rgb(226, 226, 226);">
+            <div class="container-fluid d-flex justify-content-center">
+                 <div class="row w-100">
+                    <!-- Centered row with equal width columns -->
+                    <div class="col d-flex justify-content-center pt-3">
+                        <a class="nav-link custom-nav-link" href="#">Home</a>
+                    </div>
+                    <div class="col d-flex justify-content-center pt-3">
+                        <a class="nav-link custom-nav-link" href="#">About Me</a>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <a href="#" class="navbar-brand">
+                            <img src="Images/logoBlack.png" alt="Logo" style="height: 50px;">
+                        </a>
+                    </div>
+                    <div class="col d-flex justify-content-center pt-3">
+                        <a class="nav-link custom-nav-link" href="#">Design Portfolio</a>
+                    </div>
+                    <div class="col d-flex justify-content-center pt-3">
+                        <a class="nav-link custom-nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+<!-- Section with Hero Image -->
+    <section>
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel-styles carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/livingRoomResized.jpg" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/erikaBedroomCouchAngleResized.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/kidsRoomResized.jpg" class="d-block w-100" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- About Me Section -->
+    <section class="dark-grey-background">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Image Column (Mobile First) -->
+              <div class="col-md-6">
+                <img src="Images/headshot.jpg" class="img-fluid rounded small-image" alt="Headshot">
+              </div>
+              <!-- Paragraph Column (Mobile First) -->
+              <div class="col-md-6 mt-4 mt-md-0 padded-top-section">
+                <h2 class="about-heading lighter-font-color">Meet Erika, founder of El Ahava Designs.</h2>
+                <p class="lighter-font-color mt-3">El Ahava Designs LLC is a premier design firm specializing in crafting exquisite environments for both residential and commercial spaces. With a keen eye for detail and a passion for creating luxurious surroundings, Erika leads a team of talented designers dedicated to bringing clients' dreams to life.
+                    
+                    Drawing inspiration from a diverse range of styles and influences, El Ahava Designs LLC prides itself on delivering bespoke interiors tailored to each client's unique taste and lifestyle. Whether it's a chic urban apartment, a sprawling suburban home, or a sophisticated corporate office, our team is committed to exceeding expectations and transforming spaces into stunning works of art.
+                    
+                    With a focus on quality craftsmanship, attention to detail, and exceptional customer service, El Ahava Designs LLC ensures that every project reflects the client's personality and vision while maintaining functionality and comfort. From concept to completion, Erika and the team are dedicated to making the design process seamless and enjoyable, creating environments that inspire and delight.
+                    
+                    Experience the epitome of luxury and sophistication with El Ahava Designs LLC, where every space is a masterpiece waiting to be discovered. Let us turn your design dreams into reality and elevate your surroundings to new heights of beauty and elegance.</p> </div>
+            </div>
+          </div>
+    </section>
+
+
+    <section class="container mt-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card bg-dark text-white text-center d-flex align-items-center justify-content-center">
+                    <img src="Images/diningRoomSquare.jpg" class="card-img" alt="Residential">
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <h4 class="card-title m-0">Home</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card bg-dark text-white text-center d-flex align-items-center justify-content-center">
+                    <img src="Images/SquareCommercialOffice.png" class="card-img" alt="Commercial Office">
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <h4 class="card-title m-0">Commercial</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card bg-dark text-white text-center d-flex align-items-center justify-content-center">
+                    <img src="Images/beforeAfterKitchensquare.png" class="card-img" alt="Commercial Office">
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.2);">
+                        <h4 class="card-title m-0">Before and After</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

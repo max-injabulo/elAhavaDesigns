@@ -1,0 +1,15 @@
+{
+  "name": "elahavadesigns",
+  "version": "1.0.0",
+  "description": "Website for El Ahava Designs LLC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maxy Copeland",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "lightbox2": "^2.11.4"
+  }
+}
